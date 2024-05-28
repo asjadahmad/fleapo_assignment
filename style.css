@@ -238,11 +238,11 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85%;
+  height: 100%;
   flex: 1;
   border-radius: 5px;
   background: #5b54ff;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 /* slider section */
@@ -646,7 +646,7 @@ footer {
 }
 
 
-@media (min-width: 601px) and (max-width: 1250px) {
+@media screen and (max-width: 1250px)  {
   .logo{
     width: 170px;
   }
@@ -752,15 +752,15 @@ footer {
   }
 
   .single-card-container.horizontal .right-image-container {
-    aspect-ratio: 1 / 1;
-    
+    /* aspect-ratio: 1 / 1; */
+    height: 100%;
     margin: 0px;
     margin-top: 30px;
   }
 
   .slider-outer {
     padding: 100px 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .slider-outer .slider-background {
@@ -981,73 +981,10 @@ footer {
   .logo{
     width: 40px;
   }
-  .bg{
-    top: 20%;
-    min-width: 300px !important;
-    width: 90vw !important;
-  }
-  .header{
-    padding: 20px 20px;
-    background-color: white;
-    align-items: flex-start;
-  }
-  .nav-container,
-  .header-buttons-container {
-    display: none;
-    top: 80px;
-    left: 0px;
-    border-radius: 0px;
-    position: absolute;
-    width: 100vw;
-    background-color: white;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .hamburger-container {
-    display: flex;
-    align-items: center;
-  }
-
-  .hamburger-icon {
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  .nav-container.show,
-  .header-buttons-container.show {
-    display: flex;
-  }
+ 
+ 
   
-  
-  .nav-bar {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .single-item {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .header-buttons-container .btn {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .hero-text-container {
-    padding: 0 30px;
-    gap: 45px;
-  }
-
-  .hero-text {
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-  .outer {
-    display: block;
-  }
+ 
 
   .services-heading.heading {
     font-size: 32px;
@@ -1055,58 +992,14 @@ footer {
 .services-section,.slider-container,.pricing-container{
   padding: 0px 20px;
 }
-  .services-card-container {
-    display: block;
-  }
-
-  .services-card-container > .single-card-container:not(:last-child) {
-    margin-bottom: 20px;
-  }
+ 
    .single-card-container{
     width: 100%;
-   }
-  .single-card-container.horizontal {
-    display: block;
-    height: auto;
-  }
-.single-card-container.vertical .bottom-image{
-  width: 100%;
-}
-  .single-card-container.horizontal .single-card-container {
-    padding-right: 0;
-  }
-
-  .single-card-container.horizontal .right-image-container {
-    aspect-ratio: 1 / 1;
     margin: 0px;
-    margin-top: 30px;
-  }
+   }
+ 
 
-  .slider-outer {
-    padding: 100px 20px;
-    overflow: hidden;
-  }
-
-  .slider-outer .slider-background {
-    width: calc(100% - 40px);
-  }
-
-  .slider-container {
-    margin-top: 0 !important;
-    text-align: center;
-    /* max-width: 80%; */
-    /* max-width: 1316px; */
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-  .slide-btn-text-container {
-    width: auto;
-    gap: 20px;
-  }
+  
 
   .slide-btn-text-container button {
     height: 45px;
@@ -1117,26 +1010,7 @@ footer {
     font-size: 32px;
   }
 
-  .slide-btn-text-container .text-container .slider-desc {
-    font-size: 16px;
-    width: 250px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
-  .slider{
-    width: fit-content !important;
-    height: fit-content !important;
-  }
-  .slide{
-    padding: 15px;
-    width: 400px;
-    height:fit-content !important;
-  }
-
-  .slide img{
-    width: 100%;
-    height: auto;
-  }
+ 
 
   .review-outer {
     padding: 50px 20px;
@@ -1153,34 +1027,13 @@ footer {
     display: inline-block;
   }
 
-  .pricing-container {
-    display: block;
-    padding: 0 20px;
-    width: auto;
-  }
-
-  .pricing-container .left-container {
-    text-align: center;
-    width: auto;
-    margin-bottom: 20px;
-  }
-
-  .pricing-container .left-container .pricing-heading {
-    font-size: 32px;
-  }
-
-  .pricing-container .left-container .pricing-desc {
-    width: auto;
-  }
 
   .pricing-container .left-container .meeting-box .meeting-heading {
     font-size: 24px;
     width: auto;
   }
 
-  .pricing-container .right-container {
-    width: auto;
-  }
+ 
 
   .pricing-container .right-container .pricing-heading-right {
     font-size: 24px;
@@ -1222,26 +1075,7 @@ footer {
     padding: 12px 15px;
   }
 
-  .form-section .heading {
-    font-size: 32px;
-  }
-
-  .form-section .form-container {
-    width: auto;
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .form-section .form-container .form-group label {
-    font-size: 14px;
-    padding-bottom: 8px;
-  }
-
-  .form-section .form-container .form-group input,
-  .form-section .form-container .form-group textarea {
-    padding: 10px 12px;
-    font-size: 14px;
-  }
+ 
 
   .footer-container {
     margin-bottom: 0;
