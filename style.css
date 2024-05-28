@@ -752,7 +752,7 @@ footer {
   }
 
   .single-card-container.horizontal .right-image-container {
-    /* aspect-ratio: 1 / 1; */
+    aspect-ratio: 1 / 1;
     height: 100%;
     margin: 0px;
     margin-top: 30px;
@@ -760,7 +760,7 @@ footer {
 
   .slider-outer {
     padding: 100px 20px;
-    /* overflow: hidden; */
+    overflow: hidden !important;
   }
 
   .slider-outer .slider-background {
@@ -983,7 +983,11 @@ footer {
   }
  
  
-  
+  .bg{
+    top: 20%;
+    min-width: 300px !important;
+    width: 90vw !important;
+  }
  
 
   .services-heading.heading {
@@ -997,7 +1001,10 @@ footer {
     width: 100%;
     margin: 0px;
    }
- 
+   .slider-outer {
+    padding: 100px 20px;
+    overflow: hidden !important;
+  }
 
   
 
