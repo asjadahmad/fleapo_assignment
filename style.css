@@ -294,7 +294,7 @@ li {
   width: 95vw !important;
   overflow: hidden;
   height: 618px !important;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .slide {
@@ -800,8 +800,17 @@ footer {
     margin-bottom: 20px;
   }
   .slider{
-    width: fit-content !important;
+    width: 95vw !important;
     height: fit-content !important;
+  }
+  .slider {
+    display: flex;
+    gap: 32px;
+    /* overflow: visible; */
+    
+    overflow: hidden;
+    height: 618px !important;
+    /* height: 400px; */
   }
   .slide{
     padding: 15px;
@@ -810,8 +819,8 @@ footer {
   }
 
   .slide img{
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 300px;
   }
 
   .review-outer {
@@ -927,6 +936,7 @@ footer {
   }
 
   .footer-container {
+    margin-top: 150px;
     margin-bottom: 0;
   }
 

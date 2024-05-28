@@ -1,13 +1,17 @@
 function arrowHandlerRight() {
+    const widthWindow=window.innerWidth;
     const scrollableElement = document.getElementsByClassName("slider")[0];
     console.log(scrollableElement);
-    scrollableElement.scrollBy({ left: 800, behavior: "smooth" });
+    
+    scrollableElement.scrollBy({ left:widthWindow>1250? 800:400, behavior: "smooth" })
+
 }
 
 function arrowHandlerLeft() {
+    const widthWindow=window.innerWidth;
     const scrollableElement = document.getElementsByClassName("slider")[0];
     console.log(scrollableElement);
-    scrollableElement.scrollBy({ left: -800, behavior: "smooth" });    
+    scrollableElement.scrollBy({ left:widthWindow>1250? -800:-400, behavior: "smooth" });    
 }
 
 function toggleAccordion(index) {
